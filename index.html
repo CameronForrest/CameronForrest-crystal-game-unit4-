@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    
 </head>
 
 <body>
@@ -45,16 +47,29 @@
     <br>
 
     <div class="point-score">
-    <p id=points></p>
-    <p id=wins-losses></p>
+    <h1 id=points></h1>
+    <p id=wins-losses>
+        <h2>
+            <strong>
+                Wins: 
+                <span id="win"></span>
+            </strong>
+        </h2>
+        <h2>
+            <strong>
+                Losses: 
+                <span id="loss"></span>
+            </strong>
+        </h2>
+    </p>
     </div>
 <br>
 
 <div class ="gems">
-    <img src="assets/images/blue.jpg" alt="firstgem">
-    <img src="assets/images/grey.jpg" alt="secondgem">
-    <img src="assets/images/orange.jpg" alt="thirdgem">
-    <img src="assets/images/purp.jpg" alt="forthgem">
+    <img id="blue" src="assets/images/blue.jpg" alt="firstgem">
+    <img id="grey" src="assets/images/grey.jpg" alt="secondgem">
+    <img id="orange" src="assets/images/orange.jpg" alt="thirdgem">
+    <img id="purple" src="assets/images/purp.jpg" alt="forthgem">
     
 </div>
 <br>
