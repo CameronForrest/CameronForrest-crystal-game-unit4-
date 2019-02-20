@@ -8,79 +8,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
-    
+
+
 </head>
 
 <body>
-    <div class="gameName">
-        <h1>Crystal Game</h1>
-    </div>
-    <div class="instructions">
-        <p>
-            You will be given a random number at the start of the game.
-        </p>
+    <div class="allcontent">
+        <div class="gamename">
+            <div class="container">
+                <div class="row">
+                    <h1>Crystal Game</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <div class="container">
+
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <br>
+
+                <p>
+                    There are four crystals below. By clicking on a crystal you will add a specfic amount of points to
+                    your
+                    total score.
+                </p>
+                <br>
+
+                <p>
+                    You win the hgame by matching your total score to random number, you lose the game if your total
+                    score
+                    goes
+                    above the random number.
+                </p>
+                <br>
+
+                <p>
+                    The value of ech crystal is hidden from you until you click on it.
+                </p>
+                <br>
+
+                <p>
+                    Each time when the game starts, the game will change the values of each crystal
+                </p>
+
+            </div>
+        </div>
         <br>
 
-        <p>
-            There are four crystals below. By clicking on a crystal you will add a specfic amount of points to your
-            total score.
-        </p>
+        <div class="point-score">
+            <div class="scoreGoal">
+                <h1 id=points></h1>
+            </div>
+            <div class="wins-losses">
+
+                <h2>
+                    <strong>
+                        Wins:
+                        <span id="win"></span>
+                    </strong>
+                </h2>
+                <h2>
+                    <strong>
+                        Losses:
+                        <span id="loss"></span>
+                    </strong>
+                </h2>
+            </div>
+
+
+
+        </div>
         <br>
 
-        <p>
-            You win the hgame by matching your total score to random number, you lose the game if your total score goes
-            above the random number.
-        </p>
+        <div class="gems">
+            <img id="blue" src="assets/images/blue.png" alt="firstgem">
+            <img id="grey" src="assets/images/grey.png" alt="secondgem">
+            <img id="orange" src="assets/images/orange.png" alt="thirdgem">
+            <img id="purple" src="assets/images/purp.png" alt="forthgem">
+
+        </div>
         <br>
 
-        <p>
-            The value of ech crystal is hidden from you until you click on it.
+        <p id="scoreBelow">
+            Your score is Below:
         </p>
-        <br>
+        <h1 id="yourScore"></h1>
 
-        <p>
-            Each time when the game starts, the game will change the values of each crystal
-        </p>
-    </div>
-    <br>
-
-    <div class="point-score">
-    <h1 id=points></h1>
-    <p id=wins-losses>
-        <h2>
-            <strong>
-                Wins: 
-                <span id="win"></span>
-            </strong>
-        </h2>
-        <h2>
-            <strong>
-                Losses: 
-                <span id="loss"></span>
-            </strong>
-        </h2>
-    </p>
-    </div>
-<br>
-
-<div class ="gems">
-    <img id="blue" src="assets/images/blue.jpg" alt="firstgem">
-    <img id="grey" src="assets/images/grey.jpg" alt="secondgem">
-    <img id="orange" src="assets/images/orange.jpg" alt="thirdgem">
-    <img id="purple" src="assets/images/purp.jpg" alt="forthgem">
-    
-</div>
-<br>
-
-<p>
-    Your score is Below:
-</p>
-<br>
-<div class="yourscore">
-    
-</div>
 </body>
+
+<script src="assets/javascript/game.js"></script>
 
 </html>
