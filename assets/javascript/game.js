@@ -79,8 +79,7 @@ function reset() {
     $("#win").text(wins);
     $("#loss").text(losses);
 
-    wins =0;
-    losses=0;
+   
 
     
 }
